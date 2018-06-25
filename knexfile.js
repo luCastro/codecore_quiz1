@@ -5,15 +5,14 @@ module.exports = {
   development: {
     client: 'pg',
     connection: {
-      database: 'firstQuiz',
-      user:     'luciana',
-      password: 'lu1234'
+      database: 'cluckr',
+      username: "luciana",
+      password: "lu1234"
     }
   },
 
     migrations: {
       tableName: 'knex_migrations',
-      directory: './db/migrations'
+      directory: './migrations'
     }
-
 };

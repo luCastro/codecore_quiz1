@@ -1,16 +1,25 @@
 <%- include("./partials/header") %>
 
-    
-    <div class="form-view">
-        <form class="form-control" method="POST" action="/sign">
-            <div class="form-group">
-                <label for="username">Username:</label>
-                <input type="text" class="form-control" id="username" name="username">
-                <button type="sign-in" class="btn btn-secondary mt-3">Sign in</button>
-            </div>
+    <div class="row">
+        <div class= "col-md-6">
+            <div class="form-view">
+                <form class="form-control" method="POST" action="/sign">
+                    <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input type="text" class="form-control" id="username" name="username">
+                    </div>
 
-        </form>
+                    <div class="d-flex justify-content-end">
+                        <button type="sign-in" class="btn btn-lg btn-secondary mt-3  ">Sign in</button>                    
+                    </div> 
+            </form>
+        </div>
+        
+        
+        
+        </div>  
     </div>
+            
  
 <%- include("./partials/footer") %>
 

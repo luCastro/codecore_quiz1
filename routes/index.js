@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const knex = require("../db/client");
+const knex = require("../client");
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -20,7 +20,7 @@ router.post("/sign", (req,res)=>{
 
   res.cookie("username", username, { maxAge: COOKIE_MAX_AGE });
 
-  res.redirect("/");
+  res.redirect("/cluckr");
 });
 
 router.post("/signout", (req, res)=>{

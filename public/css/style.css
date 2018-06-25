@@ -5,5 +5,9 @@
 }
 
 .img-size {
-    width: 65px;
+   max-width: 45px;
+}
+
+.btn-lg {
+    width: 300px;
 }
