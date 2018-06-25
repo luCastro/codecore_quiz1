@@ -1,7 +1,19 @@
 <%- include("./partials/header") %>
 
+    
+    <div class="form-view">
+        <form class="form-control" method="POST" action="/">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" class="form-control" id="username">
+                <button type="sign-in" class="btn btn-secondary mt-3">Sign in</button>
+            </div>
 
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+        </form>
+    </div>
+    
+    
 
 <%- include("./partials/footer") %>
+
+
