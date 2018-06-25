@@ -4,13 +4,17 @@ const knex = require("../db/client");
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-
-  res.render('index', {username: req.cookies.username});
+  const name = req.cookies.username;
+  let welcome;
+  if(name){
+    welcome =`Hello, ${name}`;
+  } 
+  res.render('index', {username: welcome});
 
 });
 
 const COOKIE_MAX_AGE = 1000 * 60 * 60 * 24 * 7;
-router.post("/sign", function(req,res){
+router.post("/sign", (req,res)=>{
 
   const username = req.body.username;
 
@@ -19,6 +23,12 @@ router.post("/sign", function(req,res){
   res.redirect("/");
 });
 
+router.post("/signout", (req, res)=>{
+  res.clearCookie("username");
+  res.redirect("/");
+});
+
 module.exports = router;
+
 
 
