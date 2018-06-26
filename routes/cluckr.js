@@ -35,7 +35,7 @@ router.get('/allcontent', (req, res)=>{
     .select("*")
     .from("cluckr")
     .then(cluckrs => {
-      res.render("allcontent", { cluckrs: cluckrs, username:name });
+      res.render("allcontent", { cluckrs: cluckrs, username: name });
     });
 });
 
