@@ -1,0 +1,27 @@
+<%- include("./partials/header") %>
+
+
+            <div class="cluck-layout"> 
+                <% for (let cluckr of cluckrs) { %>   
+                
+                    <div class="row"> 
+                        <div class="card mb-4 col-md-6">
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                <%= username %>
+                                </h4>
+                                <p class="card-text">
+                                <%= cluckr.content %>
+                                </p> 
+                                <% if (cluckr.img_url){ %>
+                                    <div class="">
+                                        <img src="<%= cluckr.img_url %>" style ="width: 120px;">    
+                                    </div>
+                                <% } %>
+                            </div>
+                        </div> 
+                    </div>    
+                <% } %>
+            </div>
+
+<%- include("./partials/footer") %>

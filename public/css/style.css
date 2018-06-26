@@ -1,0 +1,16 @@
+
+body {
+    background: lavender;
+}
+
+.container-fluid {
+    padding:0;
+}
+
+.btn-lg {
+    width: 300px;
+}
+
+.cluck-layout {
+    margin: 40px 25px 25px 25px;
+}
