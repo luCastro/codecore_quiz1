@@ -1,8 +1,11 @@
 <%- include("./partials/header") %>
 
-            <div> 
-                <% for (let cluckr of cluckrs) { %>     
-                        <div class="card mb-4">
+
+            <div class="cluck-layout"> 
+                <% for (let cluckr of cluckrs) { %>   
+                
+                    <div class="row"> 
+                        <div class="card mb-4 col-md-6">
                             <div class="card-body">
                                 <h4 class="card-title">
                                 <%= username %>
@@ -16,7 +19,8 @@
                                     </div>
                                 <% } %>
                             </div>
-                        </div>    
+                        </div> 
+                    </div>    
                 <% } %>
             </div>
 
